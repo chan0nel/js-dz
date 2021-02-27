@@ -22,7 +22,7 @@ window.addEventListener('DOMContentLoaded', function () {
     if (localStorage.getItem(todoTask) != null) {
       input.value = '';
       date.value = '';
-      return alert('Такая задача уже существует!(Очистите список или удалите элемент)')
+      return alert('Такая задача уже существует!')
     }
 
     localStorage.setItem(input.value, date.value)
